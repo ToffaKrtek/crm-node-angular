@@ -16,7 +16,9 @@ import { OrderPageComponent } from './order-page/order-page.component';
 import { HistoryPageComponent } from './history-page/history-page.component';
 import { LoaderComponent } from './shared/components/loader/loader.component';
 import { CategoryFormComponent } from './category-page/category-form/category-form.component';
-import { PosotoinsFormComponent } from './category-page/category-form/posotoins-form/posotoins-form.component';
+import { PositionFormComponent } from './category-page/category-form/position-form/position-form.component';
+import { OrderCategoryComponent } from './order-page/order-category/order-category.component';
+import { OrderPositionsComponent } from './order-page/order-positions/order-positions.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { PosotoinsFormComponent } from './category-page/category-form/posotoins-
     HistoryPageComponent,
     LoaderComponent,
     CategoryFormComponent,
-    PosotoinsFormComponent,
+    PositionFormComponent,
+    OrderCategoryComponent,
+    OrderPositionsComponent,
   ],
   imports: [
     BrowserModule,

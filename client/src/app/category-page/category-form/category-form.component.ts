@@ -1,7 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import { error } from 'protractor';
 import { of } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 import { MaterialService } from 'src/app/shared/classes/material.service';
@@ -85,8 +84,8 @@ export class CategoryFormComponent implements OnInit {
     const reader = new FileReader();
 
     reader.onload = () => {
-      this.imagePreview = reader.result;
-    };
+      this.imagePreview = reader.result as string
+    }
 
     reader.readAsDataURL(file);
   }

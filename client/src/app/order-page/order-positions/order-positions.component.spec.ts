@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PosotoinsFormComponent } from './posotoins-form.component';
+import { OrderPositionsComponent } from './order-positions.component';
 
-describe('PosotoinsFormComponent', () => {
-  let component: PosotoinsFormComponent;
-  let fixture: ComponentFixture<PosotoinsFormComponent>;
+describe('OrderPositionsComponent', () => {
+  let component: OrderPositionsComponent;
+  let fixture: ComponentFixture<OrderPositionsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PosotoinsFormComponent ]
+      declarations: [ OrderPositionsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PosotoinsFormComponent);
+    fixture = TestBed.createComponent(OrderPositionsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
