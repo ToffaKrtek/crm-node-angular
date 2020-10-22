@@ -20,7 +20,7 @@ export class OrderPageComponent implements OnInit, OnDestroy, AfterViewInit {
   pending = false
 
   constructor(private router: Router,
-      private order: OrderService,
+      public order: OrderService,
       private ordersService: OrdersService) { }
 
   ngOnInit(): void {

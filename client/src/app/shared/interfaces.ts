@@ -30,9 +30,15 @@ export interface Order {
   _id?: string
 }
 
-export interface OrderPosition{
+export interface OrderPosition {
   name: string
   cost: number
   quantity: number
   _id?: string
+}
+
+export interface Filter {
+  start?: Date
+  end?: Date
+  order?: number
 }
